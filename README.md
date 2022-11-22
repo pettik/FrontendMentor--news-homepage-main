@@ -1,3 +1,4 @@
+# ⚠️ 22nd of November 2022 -> Starting this project 🧑‍💻📝
 # Frontend Mentor - News homepage
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
