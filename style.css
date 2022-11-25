@@ -39,6 +39,12 @@ body {
     }
 }
 
+@media screen and (min-width:480px){
+    body{
+        align-items:center;
+    }
+}
+
 
 //320px — 480px: Mobile devices
 //481px — 768px: iPads, Tablets
