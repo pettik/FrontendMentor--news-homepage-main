@@ -25,8 +25,26 @@ body {
   justify-content: center;
 }
 
+ul li a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 .container {
   max-width: 1100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
 }
 
 .attribution {
