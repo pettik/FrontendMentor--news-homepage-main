@@ -23,27 +23,28 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <main class="container">
-      <header>
-        <div class="logo">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
           <img src="assets/images/logo.svg" alt="Logo" />
-        </div>
-        <div class="menu" id="nav-menu">
-          <ul>
-            <li>
-              <a href="#">Home</a>
+        </a>
+
+        <div class="nav__menu show-menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
-            <li>
-              <a href="#">New</a>
+            <li class="nav__item">
+              <a href="#news" class="nav__link">News</a>
             </li>
-            <li>
-              <a href="#">Popular</a>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
             </li>
-            <li>
-              <a href="#">Trending</a>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Trending</a>
             </li>
-            <li>
-              <a href="#">Categories</a>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Categories</a>
             </li>
           </ul>
 
@@ -56,7 +57,9 @@
         <div class="nav__toggle" id="nav-toggle">
           <i class="ri-menu-line"></i>
         </div>
-      </header>
+      </nav>
+    </header>
+    <main class="container">
       <div class="content">
         <div class="upper-box">
           <div class="main-content">
@@ -164,5 +167,38 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
     </div>
+
+    <script>
+      /*=============== SHOW MENU ===============*/
+      const navMenu = document.getElementById('nav-menu'),
+        navToggle = document.getElementById('nav-toggle'),
+        navClose = document.getElementById('nav-close');
+
+      /*===== MENU SHOW =====*/
+      /* Validate if constant exists */
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.add('show-menu');
+        });
+      }
+
+      /*===== MENU HIDDEN =====*/
+      /* Validate if constant exists */
+      if (navClose) {
+        navClose.addEventListener('click', () => {
+          navMenu.classList.remove('show-menu');
+        });
+      }
+
+      /*=============== REMOVE MENU MOBILE ===============*/
+      const navLink = document.querySelectorAll('.nav__link');
+
+      function linkAction() {
+        const navMenu = document.getElementById('nav-menu');
+        // When we click on each nav__link, we remove the show-menu class
+        navMenu.classList.remove('show-menu');
+      }
+      navLink.forEach((n) => n.addEventListener('click', linkAction));
+    </script>
   </body>
 </html>
