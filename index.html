@@ -1,204 +1,216 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+:root {
+  --header-height: 2rem;
 
-    <link rel="stylesheet" href="style.css" />
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
 
-    <title>Frontend Mentor | News homepage</title>
-  </head>
-  <body>
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <img src="assets/images/logo.svg" alt="Logo" />
-        </a>
+  --z-fixed: 100;
+}
 
-        <div class="nav__menu show-menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#news" class="nav__link">News</a>
-            </li>
-            <li class="nav__item">
-              <a href="#popular" class="nav__link">Popular</a>
-            </li>
-            <li class="nav__item">
-              <a href="#featured" class="nav__link">Trending</a>
-            </li>
-            <li class="nav__item">
-              <a href="#featured" class="nav__link">Categories</a>
-            </li>
-          </ul>
+body {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  font-size: 15px;
 
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-          </div>
-        </div>
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-        <!-- Toggle button -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
-        </div>
-      </nav>
-    </header>
-    <main class="container">
-      <div class="content">
-        <div class="upper-box">
-          <div class="main-content">
-            <div class="main-content-image">
-              <img
-                src="assets/images/image-web-3-desktop.jpg"
-                alt="Web-3 image desktop"
-                class="image-web-desktop"
-              />
-              <img
-                src="assets/images/image-web-3-mobile.jpg"
-                alt="Web-3 image mobile"
-                class="image-web-mobile"
-              />
-            </div>
-            <div class="main-text">
-              <div class="left">
-                <h1>The Bright Future of Web 3.0?</h1>
-              </div>
-              <div class="right">
-                <p>
-                  We dive into the next evolution of the web that claims to put
-                  the power of the platforms back into the hands of the people.
-                  But is it really fulfilling its promise?
-                </p>
-                <a href="#" class="btn">Read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="black-box">
-            <div class="heading"><h2>New</h2></div>
-            <div class="boxes">
-              <div class="box box-1">
-                <h3>Hydrogen VS Electric Cars</h3>
-                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-              </div>
-              <div class="box box-2">
-                <h3>The Downsides of AI Artistry</h3>
-                <p>
-                  What are the possible adverse effects of on-demand AI image
-                  generation?
-                </p>
-              </div>
-              <div class="box box-3">
-                <h3>Is VC Funding Drying Up?</h3>
-                <p>
-                  Private funding by VC firms is down 50 YOY. We take a look at
-                  what that means.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+main {
+  overflow: hidden;
+}
 
-        <div class="down-content">
-          <div class="down-content-square">
-            <div class="down-content-square-image">
-              <img src="assets/images/image-retro-pcs.jpg" alt="Retro PC" />
-            </div>
-            <div class="down-content-square-text">
-              <h2>01</h2>
-              <p>
-                <span>Reviving Retro PCs</span> What happens when old PCs are
-                given modern upgrades?
-              </p>
-            </div>
-          </div>
-          <div class="down-content-square">
-            <div class="down-content-square-image">
-              <img
-                src="assets/images/image-top-laptops.jpg"
-                alt="Top Laptops"
-              />
-            </div>
-            <div class="down-content-square-text">
-              <h2>02</h2>
-              <p>
-                <span>Top 10 Laptops of 2022</span> Our best picks for various
-                needs and budgets.
-              </p>
-            </div>
-          </div>
-          <div class="down-content-square">
-            <div class="down-content-square-image">
-              <img
-                src="assets/images/image-gaming-growth.jpg"
-                alt="Gaming growth"
-              />
-            </div>
-            <div class="down-content-square-text">
-              <h2>03</h2>
-              <p>
-                <span>The Growth of Gaming</span> How the pandemic has sparked
-                fresh opportunities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+ul li a {
+  text-decoration: none;
+}
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
-    </div>
+ul li {
+  list-style: none;
+}
 
-    <script>
-      /*=============== SHOW MENU ===============*/
-      const navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav-toggle'),
-        navClose = document.getElementById('nav-close');
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1024px;
+  margin: 1.5rem 1rem 0;
+}
+/*=============== HEADER & NAV ===============*/
+.header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
 
-      /*===== MENU SHOW =====*/
-      /* Validate if constant exists */
-      if (navToggle) {
-        navToggle.addEventListener('click', () => {
-          navMenu.classList.add('show-menu');
-        });
-      }
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
-      /*===== MENU HIDDEN =====*/
-      /* Validate if constant exists */
-      if (navClose) {
-        navClose.addEventListener('click', () => {
-          navMenu.classList.remove('show-menu');
-        });
-      }
+.nav__toggle {
+  color: #000;
+  display: inline-flex;
+}
 
-      /*=============== REMOVE MENU MOBILE ===============*/
-      const navLink = document.querySelectorAll('.nav__link');
+.nav__logo {
+  width: 2.5rem;
+}
 
-      function linkAction() {
-        const navMenu = document.getElementById('nav-menu');
-        // When we click on each nav__link, we remove the show-menu class
-        navMenu.classList.remove('show-menu');
-      }
-      navLink.forEach((n) => n.addEventListener('click', linkAction));
-    </script>
-  </body>
-</html>
+.nav__toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    transition: 0.3s;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  row-gap: 1.75rem;
+  padding-top: 9rem;
+  padding-left: 1rem;
+}
+
+.nav__link {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: var(--soft-orange);
+}
+
+.nav__close {
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* Show menu */
+
+.show-menu {
+  right: 0;
+}
+
+/* Change background header */
+.scroll-header {
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: hsla(219, 4%, 4%, 0.8);
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 1);
+}
+
+/* Active link */
+.active-link {
+  color: var(--first-color-alt);
+}
+
+.attribution {
+  display: none;
+}
+
+/* ***************** */
+/* MENU */
+/* ***************** */
+
+/* ***************** */
+/* CONTENT */
+/* ***************** */
+.content {
+  padding-top: 3rem;
+}
+
+.image-web-desktop {
+  display: none;
+}
+.image-web-mobile {
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 632px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+    padding-top: 0;
+  }
+
+  .nav__link {
+    font-size: 1rem;
+    text-transform: initial;
+  }
+}
+
+@media screen and (min-width: 1025) {
+  body {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    align-items: center;
+  }
+}
+
+/*320px — 480px: Mobile devices
+//481px — 768px: iPads, Tablets
+//769px — 1024px: Small screens, laptops
+//1025px — 1200px: Desktops, large screens
+//1201px and more —  Extra large screens, TV
+*/
