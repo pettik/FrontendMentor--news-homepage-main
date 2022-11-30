@@ -33,7 +33,7 @@ main {
   overflow: hidden;
 }
 
-ul li a {
+a {
   text-decoration: none;
 }
 
@@ -48,7 +48,10 @@ img {
   max-width: 1024px;
   margin: 1.5rem 1rem 0;
 }
-/*=============== HEADER & NAV ===============*/
+/* ***************** */
+/* MENU */
+/* ***************** */
+
 .header {
   width: 100%;
   background-color: #fff;
@@ -144,10 +147,6 @@ img {
 }
 
 /* ***************** */
-/* MENU */
-/* ***************** */
-
-/* ***************** */
 /* CONTENT */
 /* ***************** */
 .content {
@@ -159,6 +158,34 @@ img {
 }
 .image-web-mobile {
   display: block;
+}
+
+.main-text {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-size: 2.2rem;
+  padding-right: 3rem;
+  line-height: 2.3rem;
+}
+
+.main-text .right p {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.3px;
+}
+.main-text .right .btn {
+  background-color: #f15d51;
+  font-size: 0.75rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
 }
 
 @media screen and (max-width: 320px) {
