@@ -225,6 +225,41 @@ h1 {
   padding-bottom: 1.5rem;
 }
 
+.down-content-square {
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.down-content-square-image {
+  flex: 2;
+}
+
+.down-content-square-text {
+  flex: 5;
+}
+
+.down-content-square-text h2 {
+  color: var(--grayish-blue);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.down-content-square p span {
+  font-weight: 900;
+  display: block;
+  font-size: 1.1rem;
+
+  color: #000;
+}
+
+.down-content-square p {
+  color: var(--dark-grayish-blue);
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
 @media screen and (max-width: 320px) {
 }
 
