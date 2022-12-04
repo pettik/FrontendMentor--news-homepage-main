@@ -304,6 +304,13 @@ h1 {
     font-size: 1rem;
     text-transform: initial;
   }
+
+  .image-web-desktop {
+    display: block;
+  }
+  .image-web-mobile {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1025) {
