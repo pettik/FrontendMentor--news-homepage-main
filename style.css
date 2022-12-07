@@ -23,10 +23,6 @@ body {
   font-family: 'Inter', sans-serif;
   position: relative;
   font-size: 15px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 main {
@@ -313,6 +309,7 @@ h1 {
   }
 
   .header {
+    margin-top: 3rem;
     background-color: transparent;
   }
 
@@ -321,9 +318,11 @@ h1 {
   }
 
   .nav {
-    height: calc(var(--header-height) + 5rem);
+    height: calc(var(--header-height));
     opacity: 0.5;
+    margin-top: 3rem;
   }
+
   .nav__toggle,
   .nav__close {
     display: none;
@@ -337,6 +336,10 @@ h1 {
   .nav__link {
     font-size: 1rem;
     text-transform: initial;
+  }
+
+  .nav__logo {
+    width: 4rem;
   }
 
   .image-web-desktop {
