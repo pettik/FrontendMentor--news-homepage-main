@@ -330,13 +330,14 @@ h1 {
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 2.25rem;
+    column-gap: 2.1rem;
     padding-top: 0;
   }
 
   .nav__link {
     font-size: 1rem;
     text-transform: initial;
+    font-weight: 600;
   }
 
   .nav__logo {
@@ -362,8 +363,40 @@ h1 {
     column-gap: 2rem;
   }
 
+  .main-content {
+    width: 135%;
+  }
+
+  .main-text {
+    display: flex;
+  }
+
+  .main-text > .left,
+  .main-text > .right {
+    flex: 1;
+  }
+
+  .left h1 {
+    margin-top: 1rem;
+    line-height: 1;
+    font-size: 3.4rem;
+  }
+
+  .box {
+    padding-bottom: 2.1rem;
+  }
+
   .black-box {
     width: 60%;
+    padding: 1.6rem;
+  }
+
+  .black-box h2 {
+    font-size: 2.5rem;
+  }
+
+  .black-box h3 {
+    font-size: 1.2rem;
   }
 
   .main-content {
