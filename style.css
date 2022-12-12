@@ -382,6 +382,10 @@ h1 {
     font-size: 3.4rem;
   }
 
+  .right {
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
   .box {
     padding-bottom: 2.1rem;
   }
@@ -402,6 +406,10 @@ h1 {
   .main-content {
     display: flex;
     flex-direction: column;
+  }
+
+  .down-content {
+    display: flex;
   }
 }
 
