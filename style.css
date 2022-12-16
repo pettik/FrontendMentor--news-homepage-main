@@ -446,5 +446,6 @@ h1 {
   .down-content-square-text p {
     line-height: 1.6;
     font-size: 1rem;
+    padding-bottom:0;
   }
 }
