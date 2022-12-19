@@ -448,24 +448,24 @@ h1 {
   .down-content-square-text p span {
     margin-bottom: 0.5rem;
   }
+}
 
-  @media (hover: hover) {
-    .nav__link:hover {
-      color: var(--soft-red);
-    }
+@media (hover: hover) {
+  .nav__link:hover {
+    color: var(--soft-red);
+  }
 
-    .down-content-square-text p span:hover {
-      color: var(--soft-red);
-      cursor: pointer;
-    }
+  .down-content-square-text p span:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+  }
 
-    .box h3:hover {
-      color: var(--soft-orange);
-      cursor: pointer;
-    }
+  .box h3:hover {
+    color: var(--soft-orange);
+    cursor: pointer;
+  }
 
-    .right .btn:hover {
-      background-color: #000;
-    }
+  .right .btn:hover {
+    background-color: #000;
   }
 }
