@@ -108,10 +108,6 @@ img {
   transition: 0.3s;
 }
 
-.nav__link:hover {
-  color: var(--soft-orange);
-}
-
 .nav__close {
   font-size: 2rem;
   color: #000;
@@ -279,7 +275,7 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-  body::after {
+  /* body::after {
     content: '';
     margin-top: -6rem !important;
     top: 0;
@@ -302,7 +298,7 @@ h1 {
 
   main {
     opacity: 0.7;
-  }
+  } */
 
   .header {
     margin-top: 0;
@@ -316,7 +312,7 @@ h1 {
 
   .nav {
     height: calc(var(--header-height));
-    opacity: 0.5;
+    /* opacity: 0.5; */
     margin-top: 3rem;
   }
 
@@ -333,7 +329,8 @@ h1 {
   .nav__link {
     font-size: 1rem;
     text-transform: initial;
-    font-weight: 600;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
   }
 
   .nav__logo {
@@ -450,5 +447,25 @@ h1 {
 
   .down-content-square-text p span {
     margin-bottom: 0.5rem;
+  }
+
+  @media (hover: hover) {
+    .nav__link:hover {
+      color: var(--soft-red);
+    }
+
+    .down-content-square-text p span:hover {
+      color: var(--soft-red);
+      cursor: pointer;
+    }
+
+    .box h3:hover {
+      color: var(--soft-orange);
+      cursor: pointer;
+    }
+
+    .right .btn:hover {
+      background-color: #000;
+    }
   }
 }
