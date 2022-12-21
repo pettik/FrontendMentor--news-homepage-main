@@ -23,6 +23,7 @@ body {
   font-family: 'Inter', sans-serif;
   position: relative;
   font-size: 15px;
+  background: hsl(48, 71%, 99%);
 }
 
 main {
