@@ -313,7 +313,7 @@ h1 {
   .nav {
     height: calc(var(--header-height));
     /* opacity: 0.5; */
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .nav__toggle,
